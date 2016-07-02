@@ -63,7 +63,7 @@
 - (void)beaconManager:(ABBeaconManager *)manager didEnterRegion:(ABBeaconRegion *)region
 {
     UILocalNotification *notification = [[UILocalNotification alloc] init];
-    notification.alertBody = @"Enter monitoring region";
+    notification.alertBody = @"Nueva promoción en el super mercado";
     notification.soundName = UILocalNotificationDefaultSoundName;
     [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
 }
@@ -71,7 +71,7 @@
 - (void)beaconManager:(ABBeaconManager *)manager didExitRegion:(ABBeaconRegion *)region
 {
     UILocalNotification *notification = [[UILocalNotification alloc] init];
-    notification.alertBody = @"Exit monitoring region";
+    notification.alertBody = @"Has salido del super mercado esperamos que vuelvas pronto";
     notification.soundName = UILocalNotificationDefaultSoundName;
     [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
 }
