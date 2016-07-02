@@ -13,6 +13,19 @@
 		F2066CF01D28381A00E4EE3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2066CEE1D28381A00E4EE3F /* Main.storyboard */; };
 		F2066CF21D28381B00E4EE3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2066CF11D28381B00E4EE3F /* Assets.xcassets */; };
 		F2066CF51D28381B00E4EE3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2066CF31D28381B00E4EE3F /* LaunchScreen.storyboard */; };
+		F2066D071D28385700E4EE3F /* libAprilBeaconSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2066D061D28385700E4EE3F /* libAprilBeaconSDK.a */; };
+		F2066D0F1D28389E00E4EE3F /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F2066D0A1D28389E00E4EE3F /* JVFloatLabeledTextField.m */; };
+		F2066D101D28389E00E4EE3F /* JVFloatLabeledTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2066D0C1D28389E00E4EE3F /* JVFloatLabeledTextView.m */; };
+		F2066D111D28389E00E4EE3F /* NSString+TextDirectionality.m in Sources */ = {isa = PBXBuildFile; fileRef = F2066D0E1D28389E00E4EE3F /* NSString+TextDirectionality.m */; };
+		F2066D151D2839FD00E4EE3F /* ABBeaconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2066D141D2839FD00E4EE3F /* ABBeaconViewController.m */; };
+		F2066D261D283A2B00E4EE3F /* ABBluetoothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2066D171D283A2B00E4EE3F /* ABBluetoothViewController.m */; };
+		F2066D271D283A2B00E4EE3F /* ABModifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2066D191D283A2B00E4EE3F /* ABModifyViewController.m */; };
+		F2066D281D283A2B00E4EE3F /* ABNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2066D1B1D283A2B00E4EE3F /* ABNotificationViewController.m */; };
+		F2066D291D283A2B00E4EE3F /* ABSelectDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2066D1D1D283A2B00E4EE3F /* ABSelectDeviceViewController.m */; };
+		F2066D2A1D283A2B00E4EE3F /* ABSensorListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2066D1F1D283A2B00E4EE3F /* ABSensorListViewController.m */; };
+		F2066D2B1D283A2B00E4EE3F /* ABSensorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2066D211D283A2B00E4EE3F /* ABSensorViewController.m */; };
+		F2066D2C1D283A2B00E4EE3F /* ABTransmitters.m in Sources */ = {isa = PBXBuildFile; fileRef = F2066D231D283A2B00E4EE3F /* ABTransmitters.m */; };
+		F2066D2D1D283A2B00E4EE3F /* ABUUIDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F2066D251D283A2B00E4EE3F /* ABUUIDTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +39,39 @@
 		F2066CF11D28381B00E4EE3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2066CF41D28381B00E4EE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2066CF61D28381B00E4EE3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2066CFE1D28385700E4EE3F /* ABBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABBeacon.h; sourceTree = "<group>"; };
+		F2066CFF1D28385700E4EE3F /* ABBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABBeaconManager.h; sourceTree = "<group>"; };
+		F2066D001D28385700E4EE3F /* ABBeaconRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABBeaconRegion.h; sourceTree = "<group>"; };
+		F2066D011D28385700E4EE3F /* ABBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABBluetoothManager.h; sourceTree = "<group>"; };
+		F2066D021D28385700E4EE3F /* ABDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABDefinitions.h; sourceTree = "<group>"; };
+		F2066D031D28385700E4EE3F /* ABError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABError.h; sourceTree = "<group>"; };
+		F2066D041D28385700E4EE3F /* ABSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABSensor.h; sourceTree = "<group>"; };
+		F2066D051D28385700E4EE3F /* AprilBeaconSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AprilBeaconSDK.h; sourceTree = "<group>"; };
+		F2066D061D28385700E4EE3F /* libAprilBeaconSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAprilBeaconSDK.a; sourceTree = "<group>"; };
+		F2066D091D28389E00E4EE3F /* JVFloatLabeledTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextField.h; sourceTree = "<group>"; };
+		F2066D0A1D28389E00E4EE3F /* JVFloatLabeledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextField.m; sourceTree = "<group>"; };
+		F2066D0B1D28389E00E4EE3F /* JVFloatLabeledTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextView.h; sourceTree = "<group>"; };
+		F2066D0C1D28389E00E4EE3F /* JVFloatLabeledTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextView.m; sourceTree = "<group>"; };
+		F2066D0D1D28389E00E4EE3F /* NSString+TextDirectionality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TextDirectionality.h"; sourceTree = "<group>"; };
+		F2066D0E1D28389E00E4EE3F /* NSString+TextDirectionality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TextDirectionality.m"; sourceTree = "<group>"; };
+		F2066D131D2839FD00E4EE3F /* ABBeaconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABBeaconViewController.h; sourceTree = "<group>"; };
+		F2066D141D2839FD00E4EE3F /* ABBeaconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABBeaconViewController.m; sourceTree = "<group>"; };
+		F2066D161D283A2B00E4EE3F /* ABBluetoothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABBluetoothViewController.h; sourceTree = "<group>"; };
+		F2066D171D283A2B00E4EE3F /* ABBluetoothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABBluetoothViewController.m; sourceTree = "<group>"; };
+		F2066D181D283A2B00E4EE3F /* ABModifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABModifyViewController.h; sourceTree = "<group>"; };
+		F2066D191D283A2B00E4EE3F /* ABModifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABModifyViewController.m; sourceTree = "<group>"; };
+		F2066D1A1D283A2B00E4EE3F /* ABNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABNotificationViewController.h; sourceTree = "<group>"; };
+		F2066D1B1D283A2B00E4EE3F /* ABNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABNotificationViewController.m; sourceTree = "<group>"; };
+		F2066D1C1D283A2B00E4EE3F /* ABSelectDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABSelectDeviceViewController.h; sourceTree = "<group>"; };
+		F2066D1D1D283A2B00E4EE3F /* ABSelectDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABSelectDeviceViewController.m; sourceTree = "<group>"; };
+		F2066D1E1D283A2B00E4EE3F /* ABSensorListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABSensorListViewController.h; sourceTree = "<group>"; };
+		F2066D1F1D283A2B00E4EE3F /* ABSensorListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABSensorListViewController.m; sourceTree = "<group>"; };
+		F2066D201D283A2B00E4EE3F /* ABSensorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABSensorViewController.h; sourceTree = "<group>"; };
+		F2066D211D283A2B00E4EE3F /* ABSensorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABSensorViewController.m; sourceTree = "<group>"; };
+		F2066D221D283A2B00E4EE3F /* ABTransmitters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABTransmitters.h; sourceTree = "<group>"; };
+		F2066D231D283A2B00E4EE3F /* ABTransmitters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABTransmitters.m; sourceTree = "<group>"; };
+		F2066D241D283A2B00E4EE3F /* ABUUIDTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABUUIDTextField.h; sourceTree = "<group>"; };
+		F2066D251D283A2B00E4EE3F /* ABUUIDTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABUUIDTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2066D071D28385700E4EE3F /* libAprilBeaconSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +105,9 @@
 		F2066CE41D28381A00E4EE3F /* beacons */ = {
 			isa = PBXGroup;
 			children = (
+				F2066D121D2839EF00E4EE3F /* test */,
+				F2066D081D28389E00E4EE3F /* JVFloatLabeledTextField */,
+				F2066CFC1D28385700E4EE3F /* AprilSDK */,
 				F2066CE81D28381A00E4EE3F /* AppDelegate.h */,
 				F2066CE91D28381A00E4EE3F /* AppDelegate.m */,
 				F2066CEB1D28381A00E4EE3F /* ViewController.h */,
@@ -77,6 +127,68 @@
 				F2066CE61D28381A00E4EE3F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2066CFC1D28385700E4EE3F /* AprilSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F2066CFD1D28385700E4EE3F /* Headers */,
+				F2066D061D28385700E4EE3F /* libAprilBeaconSDK.a */,
+			);
+			path = AprilSDK;
+			sourceTree = "<group>";
+		};
+		F2066CFD1D28385700E4EE3F /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				F2066CFE1D28385700E4EE3F /* ABBeacon.h */,
+				F2066CFF1D28385700E4EE3F /* ABBeaconManager.h */,
+				F2066D001D28385700E4EE3F /* ABBeaconRegion.h */,
+				F2066D011D28385700E4EE3F /* ABBluetoothManager.h */,
+				F2066D021D28385700E4EE3F /* ABDefinitions.h */,
+				F2066D031D28385700E4EE3F /* ABError.h */,
+				F2066D041D28385700E4EE3F /* ABSensor.h */,
+				F2066D051D28385700E4EE3F /* AprilBeaconSDK.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		F2066D081D28389E00E4EE3F /* JVFloatLabeledTextField */ = {
+			isa = PBXGroup;
+			children = (
+				F2066D091D28389E00E4EE3F /* JVFloatLabeledTextField.h */,
+				F2066D0A1D28389E00E4EE3F /* JVFloatLabeledTextField.m */,
+				F2066D0B1D28389E00E4EE3F /* JVFloatLabeledTextView.h */,
+				F2066D0C1D28389E00E4EE3F /* JVFloatLabeledTextView.m */,
+				F2066D0D1D28389E00E4EE3F /* NSString+TextDirectionality.h */,
+				F2066D0E1D28389E00E4EE3F /* NSString+TextDirectionality.m */,
+			);
+			path = JVFloatLabeledTextField;
+			sourceTree = "<group>";
+		};
+		F2066D121D2839EF00E4EE3F /* test */ = {
+			isa = PBXGroup;
+			children = (
+				F2066D161D283A2B00E4EE3F /* ABBluetoothViewController.h */,
+				F2066D171D283A2B00E4EE3F /* ABBluetoothViewController.m */,
+				F2066D181D283A2B00E4EE3F /* ABModifyViewController.h */,
+				F2066D191D283A2B00E4EE3F /* ABModifyViewController.m */,
+				F2066D1A1D283A2B00E4EE3F /* ABNotificationViewController.h */,
+				F2066D1B1D283A2B00E4EE3F /* ABNotificationViewController.m */,
+				F2066D1C1D283A2B00E4EE3F /* ABSelectDeviceViewController.h */,
+				F2066D1D1D283A2B00E4EE3F /* ABSelectDeviceViewController.m */,
+				F2066D1E1D283A2B00E4EE3F /* ABSensorListViewController.h */,
+				F2066D1F1D283A2B00E4EE3F /* ABSensorListViewController.m */,
+				F2066D201D283A2B00E4EE3F /* ABSensorViewController.h */,
+				F2066D211D283A2B00E4EE3F /* ABSensorViewController.m */,
+				F2066D221D283A2B00E4EE3F /* ABTransmitters.h */,
+				F2066D231D283A2B00E4EE3F /* ABTransmitters.m */,
+				F2066D241D283A2B00E4EE3F /* ABUUIDTextField.h */,
+				F2066D251D283A2B00E4EE3F /* ABUUIDTextField.m */,
+				F2066D131D2839FD00E4EE3F /* ABBeaconViewController.h */,
+				F2066D141D2839FD00E4EE3F /* ABBeaconViewController.m */,
+			);
+			name = test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +261,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2066D0F1D28389E00E4EE3F /* JVFloatLabeledTextField.m in Sources */,
 				F2066CED1D28381A00E4EE3F /* ViewController.m in Sources */,
+				F2066D111D28389E00E4EE3F /* NSString+TextDirectionality.m in Sources */,
+				F2066D2B1D283A2B00E4EE3F /* ABSensorViewController.m in Sources */,
+				F2066D2A1D283A2B00E4EE3F /* ABSensorListViewController.m in Sources */,
 				F2066CEA1D28381A00E4EE3F /* AppDelegate.m in Sources */,
+				F2066D2C1D283A2B00E4EE3F /* ABTransmitters.m in Sources */,
+				F2066D291D283A2B00E4EE3F /* ABSelectDeviceViewController.m in Sources */,
 				F2066CE71D28381A00E4EE3F /* main.m in Sources */,
+				F2066D151D2839FD00E4EE3F /* ABBeaconViewController.m in Sources */,
+				F2066D261D283A2B00E4EE3F /* ABBluetoothViewController.m in Sources */,
+				F2066D271D283A2B00E4EE3F /* ABModifyViewController.m in Sources */,
+				F2066D2D1D283A2B00E4EE3F /* ABUUIDTextField.m in Sources */,
+				F2066D281D283A2B00E4EE3F /* ABNotificationViewController.m in Sources */,
+				F2066D101D28389E00E4EE3F /* JVFloatLabeledTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +391,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = beacons/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/beacons/AprilSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.beacons.beacons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -278,6 +406,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = beacons/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/beacons/AprilSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.beacons.beacons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

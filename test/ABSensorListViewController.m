@@ -7,7 +7,7 @@
 //
 
 #import "ABSensorListViewController.h"
-#import "AprilBeaconSDK.h"
+#import <AprilBeaconSDK.h>
 #import "ABSensorViewController.h"
 
 @interface ABSensorListViewController () <ABBluetoothManagerDelegate>

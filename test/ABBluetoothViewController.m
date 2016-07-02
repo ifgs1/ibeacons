@@ -1,23 +1,22 @@
 //
-//  ABSensorListViewController.m
-//  AprilBeaconDemo
+//  ABBluetoothViewController.m
+//  TestSDKPod
 //
-//  Created by liaojinhua on 14-8-15.
+//  Created by liaojinhua on 14-5-8.
 //  Copyright (c) 2014年 AprilBrother. All rights reserved.
 //
 
-#import "ABSensorListViewController.h"
-#import "AprilBeaconSDK.h"
-#import "ABSensorViewController.h"
+#import "ABBluetoothViewController.h"
+#import "ABModifyViewController.h"
 
-@interface ABSensorListViewController () <ABBluetoothManagerDelegate>
+@interface ABBluetoothViewController () <ABBluetoothManagerDelegate>
 
 @property (nonatomic, strong) ABBluetoothManager *beaconManager;
 @property (nonatomic, strong) NSMutableArray *tableData;
 
 @end
 
-@implementation ABSensorListViewController
+@implementation ABBluetoothViewController
 
 - (void)viewDidLoad
 {
@@ -32,6 +31,8 @@
     [self.refreshControl addTarget:self
                             action:@selector(startRangeBeacons)
                   forControlEvents:UIControlEventValueChanged];
+    
+    [self.beaconManager addCustomBeaconNameFilter:@"aikaka"];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -54,9 +55,9 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"ViewSensorSegue"]) {
-        ABSensorViewController *vc = segue.destinationViewController;
-        vc.sensor = sender;
+    if ([segue.identifier isEqualToString:@"ModifySegue"]) {
+        ABModifyViewController *vc = segue.destinationViewController;
+        vc.beacon = sender;
     }
 }
 
@@ -75,26 +76,55 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"beaconCell"];
     
     cell.textLabel.text = peripheral.name;
-    cell.detailTextLabel.text = [peripheral.identifier UUIDString];
+    NSMutableString *detailString = [[NSMutableString alloc] init];
+    
+    // fot the newest EEK iBeacon, you can get Major, Minor, Mac Address , battery level when scan iBeacons.
+    if (beacon.major) {
+        [detailString appendFormat:@"Major:%@ ",beacon.major];
+    }
+    if (beacon.minor) {
+        [detailString appendFormat:@"Minor:%@ ",beacon.minor];
+    }
+    if (beacon.macAddress) {
+        [detailString appendFormat:@"Mac:%@ ",beacon.macAddress];
+    }
+    if (beacon.batteryLevel) {
+        [detailString appendFormat:@"Battery:%@ ", beacon.batteryLevel];
+    }
+    if (beacon.rssi == 127) {
+        cell.userInteractionEnabled = NO;
+        cell.textLabel.textColor = [UIColor lightGrayColor];
+        
+        [detailString appendFormat:@"rssi : "];
+    } else {
+        cell.userInteractionEnabled = YES;
+        cell.textLabel.textColor = [UIColor blackColor];
+        [detailString appendFormat:@"rssi : %ld", (long)beacon.rssi];
+    }
+    
+    cell.detailTextLabel.text = detailString;
+    cell.detailTextLabel.numberOfLines = 0;
+    
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:@"ViewSensorSegue" sender:_tableData[indexPath.row]];
+    [self performSegueWithIdentifier:@"ModifySegue" sender:_tableData[indexPath.row]];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60;
 }
 
 
 #pragma mark - ABBeaconManagerDelegate
-- (void)beaconManager:(ABBeaconManager *)manager didDiscoverBeacons:(NSArray *)beacons {
+- (void)beaconManager:(ABBeaconManager *)manager didDiscoverBeacons:(NSArray *)beacons{
     [self.refreshControl endRefreshing];
     [_tableData removeAllObjects];
-    [beacons enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        if ([obj isKindOfClass:[ABSensor class]]) {
-            [_tableData addObject:obj];
-        }
-    }];
+    [_tableData addObjectsFromArray:beacons];
     [self.tableView reloadData];
 }
 
@@ -104,10 +134,14 @@
 {
     [self stopRangeBeacons];
     [_beaconManager startAprilBeaconsDiscovery];
+//    [_beaconManager startAprilSensorsDiscovery]; // only find april sensors
+//    [_beaconManager startAprilLightDiscovery]; // only find april lights
 }
 
 - (void)stopRangeBeacons
 {
     [_beaconManager stopAprilBeaconDiscovery];
 }
+
+
 @end

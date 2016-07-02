@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AprilBeaconSDK.h"
+#import <AprilBeaconSDK.h>
 #import "JVFloatLabeledTextField.h"
 #import "ABUUIDTextField.h"
 
