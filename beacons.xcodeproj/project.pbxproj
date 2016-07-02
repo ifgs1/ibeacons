@@ -26,6 +26,7 @@
 		F2066D2B1D283A2B00E4EE3F /* ABSensorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2066D211D283A2B00E4EE3F /* ABSensorViewController.m */; };
 		F2066D2C1D283A2B00E4EE3F /* ABTransmitters.m in Sources */ = {isa = PBXBuildFile; fileRef = F2066D231D283A2B00E4EE3F /* ABTransmitters.m */; };
 		F2066D2D1D283A2B00E4EE3F /* ABUUIDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F2066D251D283A2B00E4EE3F /* ABUUIDTextField.m */; };
+		F2066D2F1D28492B00E4EE3F /* Untitled 2.png in Resources */ = {isa = PBXBuildFile; fileRef = F2066D2E1D28492B00E4EE3F /* Untitled 2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		F2066D231D283A2B00E4EE3F /* ABTransmitters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABTransmitters.m; sourceTree = "<group>"; };
 		F2066D241D283A2B00E4EE3F /* ABUUIDTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABUUIDTextField.h; sourceTree = "<group>"; };
 		F2066D251D283A2B00E4EE3F /* ABUUIDTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABUUIDTextField.m; sourceTree = "<group>"; };
+		F2066D2E1D28492B00E4EE3F /* Untitled 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Untitled 2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 		F2066D121D2839EF00E4EE3F /* test */ = {
 			isa = PBXGroup;
 			children = (
+				F2066D2E1D28492B00E4EE3F /* Untitled 2.png */,
 				F2066D161D283A2B00E4EE3F /* ABBluetoothViewController.h */,
 				F2066D171D283A2B00E4EE3F /* ABBluetoothViewController.m */,
 				F2066D181D283A2B00E4EE3F /* ABModifyViewController.h */,
@@ -248,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2066D2F1D28492B00E4EE3F /* Untitled 2.png in Resources */,
 				F2066CF51D28381B00E4EE3F /* LaunchScreen.storyboard in Resources */,
 				F2066CF21D28381B00E4EE3F /* Assets.xcassets in Resources */,
 				F2066CF01D28381A00E4EE3F /* Main.storyboard in Resources */,
